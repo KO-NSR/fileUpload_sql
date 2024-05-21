@@ -6,6 +6,8 @@ const PORT = 5000;
 
 app.use(fileUpload());
 
+app.use(express.static("upload"));
+
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", "./views");
