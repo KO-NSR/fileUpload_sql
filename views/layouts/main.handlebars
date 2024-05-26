@@ -5,6 +5,9 @@
 </form>
 
 <div>
-    <p>↓に保存された画像が出力されます</p>
-    <img src="../../upload/sea.jpg" alt="" />
+    {{#each result}}
+        <p>↓に保存された画像が出力されます</p>
+        {{!-- <img src="sea.jpg" alt="" /> --}}
+        <p>{{this.imageName}}</p>
+    {{/each}}
 </div>
