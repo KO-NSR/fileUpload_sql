@@ -6,8 +6,8 @@
 
 <div>
     {{#each result}}
-        <p>↓に保存された画像が出力されます</p>
-        {{!-- <img src="sea.jpg" alt="" /> --}}
-        <p>{{this.imageName}}</p>
+        <p>No.{{this.id}}</p>
+        <img src="{{this.imageName}}" alt="" style="width: 300px"/>
+        <p>imageName: {{this.imageName}}</p>
     {{/each}}
 </div>
